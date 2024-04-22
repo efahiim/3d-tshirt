@@ -15,17 +15,23 @@
       "@components/*": [
         "./src/components/*"
       ],
-      "@constants/*": [
-        "./src/constants/*"
+      "@pages/*": [
+        "./src/pages/*"
       ],
       "@interfaces/*": [
         "./src/interfaces/*"
       ],
+      "@configs/*": [
+        "./src/configs/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
       "@assets/*": [
         "./src/assets/*"
       ],
-      "@models/*": [
-        "./src/models/*"
+      "@canvas/*": [
+        "src/canvas/*"
       ],
     },
     /* Bundler mode */

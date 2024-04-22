@@ -1,4 +1,3 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import * as path from "path";
@@ -6,14 +5,16 @@ import * as path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  assetsInclude: ['**/*.glb'],
+  assetsInclude: ["**/*.glb"],
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, "./src/components/"),
-      "@constants": path.resolve(__dirname, "./src/constants/"),
+      "@pages": path.resolve(__dirname, "./src/pages/"),
       "@interfaces": path.resolve(__dirname, "./src/interfaces/"),
+      "@configs": path.resolve(__dirname, "./src/configs/"),
+      "@store": path.resolve(__dirname, "./src/store/"),
       "@assets": path.resolve(__dirname, "./src/assets/"),
-      "@models": path.resolve(__dirname, "./src/models/"),
+      "@canvas": path.resolve(__dirname, "./src/canvas/"),
     },
   },
 });

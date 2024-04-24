@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useSnapshot } from "valtio";
 
@@ -9,13 +9,11 @@ import {
   Tab,
 } from "@components/index";
 
-import config from "@configs/config";
 import { fadeAnimation, slideAnimation } from "@configs/motion";
-import { downloadCanvasToImage, reader } from "@configs/helpers";
+import { reader } from "@configs/helpers";
 import { EditorTabs, FilterTabs, DecalTypes } from "@configs/constants";
 
 import state from "@store/index";
-import { download } from "@assets/index";
 
 interface FilterTab {
   logoTshirt: boolean;

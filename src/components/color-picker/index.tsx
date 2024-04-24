@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-expect-error: Module not found
 import { SketchPicker } from "react-color";
 import { useSnapshot } from "valtio";
 
